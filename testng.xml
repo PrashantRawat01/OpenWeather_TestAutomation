@@ -18,9 +18,9 @@
        <parameter name="Param1" value="Mumbai"/> 
     </classes>
   </test>
-    <test name="Test4" >
+    <test name="Test5" >
     <classes>
-      <class name="main.testScripts.Test4"/>
+      <class name="main.testScripts.Test5"/>
     </classes>
- </test>
+  </test>
 </suite>
