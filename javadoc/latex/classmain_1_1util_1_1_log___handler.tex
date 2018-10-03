@@ -1,0 +1,135 @@
+\hypertarget{classmain_1_1util_1_1_log___handler}{}\section{main.\+util.\+Log\+\_\+\+Handler Class Reference}
+\label{classmain_1_1util_1_1_log___handler}\index{main.\+util.\+Log\+\_\+\+Handler@{main.\+util.\+Log\+\_\+\+Handler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1util_1_1_log___handler_a3fc58be8e1937ce44367f9eeba0e390c}{Log\+\_\+\+Handler}} ()
+\item 
+void \mbox{\hyperlink{classmain_1_1util_1_1_log___handler_a5b492631563d77695ca14d0dd3af05ec}{delete\+Log\+File}} ()
+\item 
+void \mbox{\hyperlink{classmain_1_1util_1_1_log___handler_a263af7d36015999901a87f057550020f}{create\+Log\+File}} ()
+\item 
+int \mbox{\hyperlink{classmain_1_1util_1_1_log___handler_ae7256f977793bd0847c9775bd81743a8}{backup\+Log\+Writer\+File}} (String test\+Case\+Name)
+\item 
+int \mbox{\hyperlink{classmain_1_1util_1_1_log___handler_ab3b7d1c5620a36a1183aa1db40146f1f}{write\+To\+Log\+File}} (String content\+To\+Write)
+\item 
+int \mbox{\hyperlink{classmain_1_1util_1_1_log___handler_a77c07bc8ee96f3bef8948d2e4efa90f8}{write\+To\+Log\+File}} (String level, String content\+To\+Write)
+\item 
+void \mbox{\hyperlink{classmain_1_1util_1_1_log___handler_a08694f23b4736996c217c3ae80768fa1}{log4j\+Test\+Exe\+Backup}} (String test\+Case\+Name)
+\item 
+void \mbox{\hyperlink{classmain_1_1util_1_1_log___handler_af77a2fd0473dc8b7417c6beda7dd1d58}{back\+Up\+Log\+Test\+Case\+Wise}} (String test\+Case\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmain_1_1util_1_1_log___handler_a80457243c4af12e40d84b8dc7fef146d}\label{classmain_1_1util_1_1_log___handler_a80457243c4af12e40d84b8dc7fef146d}} 
+Logger {\bfseries log} = Logger.\+get\+Logger(Log\+\_\+\+Handler.\+class.\+get\+Name())
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provided for log4j log generation during test execution. So a flexibility to create logs backup. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmain_1_1util_1_1_log___handler_a3fc58be8e1937ce44367f9eeba0e390c}\label{classmain_1_1util_1_1_log___handler_a3fc58be8e1937ce44367f9eeba0e390c}} 
+\index{main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}!Log\+\_\+\+Handler@{Log\+\_\+\+Handler}}
+\index{Log\+\_\+\+Handler@{Log\+\_\+\+Handler}!main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}}
+\subsubsection{\texorpdfstring{Log\+\_\+\+Handler()}{Log\_Handler()}}
+{\footnotesize\ttfamily main.\+util.\+Log\+\_\+\+Handler.\+Log\+\_\+\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor, to loading the log4j config properties. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain_1_1util_1_1_log___handler_af77a2fd0473dc8b7417c6beda7dd1d58}\label{classmain_1_1util_1_1_log___handler_af77a2fd0473dc8b7417c6beda7dd1d58}} 
+\index{main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}!back\+Up\+Log\+Test\+Case\+Wise@{back\+Up\+Log\+Test\+Case\+Wise}}
+\index{back\+Up\+Log\+Test\+Case\+Wise@{back\+Up\+Log\+Test\+Case\+Wise}!main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}}
+\subsubsection{\texorpdfstring{back\+Up\+Log\+Test\+Case\+Wise()}{backUpLogTestCaseWise()}}
+{\footnotesize\ttfamily void main.\+util.\+Log\+\_\+\+Handler.\+back\+Up\+Log\+Test\+Case\+Wise (\begin{DoxyParamCaption}\item[{String}]{test\+Case\+Name }\end{DoxyParamCaption})}
+
+For Internal use, To place log data in correct log file (Not working as of now, Need to improve) 
+\begin{DoxyParams}{Parameters}
+{\em test\+Case\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmain_1_1util_1_1_log___handler_ae7256f977793bd0847c9775bd81743a8}\label{classmain_1_1util_1_1_log___handler_ae7256f977793bd0847c9775bd81743a8}} 
+\index{main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}!backup\+Log\+Writer\+File@{backup\+Log\+Writer\+File}}
+\index{backup\+Log\+Writer\+File@{backup\+Log\+Writer\+File}!main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}}
+\subsubsection{\texorpdfstring{backup\+Log\+Writer\+File()}{backupLogWriterFile()}}
+{\footnotesize\ttfamily int main.\+util.\+Log\+\_\+\+Handler.\+backup\+Log\+Writer\+File (\begin{DoxyParamCaption}\item[{String}]{test\+Case\+Name }\end{DoxyParamCaption})}
+
+To copy the log file to the Log\+\_\+backup folder with Test case name after each test case execution. 
+\begin{DoxyParams}{Parameters}
+{\em test\+Case\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int, 1 for success \& 0 for failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmain_1_1util_1_1_log___handler_a263af7d36015999901a87f057550020f}\label{classmain_1_1util_1_1_log___handler_a263af7d36015999901a87f057550020f}} 
+\index{main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}!create\+Log\+File@{create\+Log\+File}}
+\index{create\+Log\+File@{create\+Log\+File}!main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}}
+\subsubsection{\texorpdfstring{create\+Log\+File()}{createLogFile()}}
+{\footnotesize\ttfamily void main.\+util.\+Log\+\_\+\+Handler.\+create\+Log\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+To create a log file after deletion or at time when it is needed/ But this is not needed is we are not using delete\+Log\+File method as log4J appender will automatically create the log file as defined in its config file. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmain_1_1util_1_1_log___handler_a5b492631563d77695ca14d0dd3af05ec}\label{classmain_1_1util_1_1_log___handler_a5b492631563d77695ca14d0dd3af05ec}} 
+\index{main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}!delete\+Log\+File@{delete\+Log\+File}}
+\index{delete\+Log\+File@{delete\+Log\+File}!main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}}
+\subsubsection{\texorpdfstring{delete\+Log\+File()}{deleteLogFile()}}
+{\footnotesize\ttfamily void main.\+util.\+Log\+\_\+\+Handler.\+delete\+Log\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+To delete the log file After a test case execution. (This method should be used after the Test end phase once a backup of the logfile has been taken. so it will have make sure that the logger file will have only current test log data. otherwise log file will be lost) To put at starting phase, It doesn\textquotesingle{}t work. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmain_1_1util_1_1_log___handler_a08694f23b4736996c217c3ae80768fa1}\label{classmain_1_1util_1_1_log___handler_a08694f23b4736996c217c3ae80768fa1}} 
+\index{main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}!log4j\+Test\+Exe\+Backup@{log4j\+Test\+Exe\+Backup}}
+\index{log4j\+Test\+Exe\+Backup@{log4j\+Test\+Exe\+Backup}!main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}}
+\subsubsection{\texorpdfstring{log4j\+Test\+Exe\+Backup()}{log4jTestExeBackup()}}
+{\footnotesize\ttfamily void main.\+util.\+Log\+\_\+\+Handler.\+log4j\+Test\+Exe\+Backup (\begin{DoxyParamCaption}\item[{String}]{test\+Case\+Name }\end{DoxyParamCaption})}
+
+For Internal use, To create a backup of test case wise execution logs. 
+\begin{DoxyParams}{Parameters}
+{\em test\+Case\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmain_1_1util_1_1_log___handler_ab3b7d1c5620a36a1183aa1db40146f1f}\label{classmain_1_1util_1_1_log___handler_ab3b7d1c5620a36a1183aa1db40146f1f}} 
+\index{main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}!write\+To\+Log\+File@{write\+To\+Log\+File}}
+\index{write\+To\+Log\+File@{write\+To\+Log\+File}!main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}}
+\subsubsection{\texorpdfstring{write\+To\+Log\+File()}{writeToLogFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int main.\+util.\+Log\+\_\+\+Handler.\+write\+To\+Log\+File (\begin{DoxyParamCaption}\item[{String}]{content\+To\+Write }\end{DoxyParamCaption})}
+
+To write a content into the log file (Will write the content as log.\+info). 
+\begin{DoxyParams}{Parameters}
+{\em content\+To\+Write} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int, 1 for success \& 0 for failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmain_1_1util_1_1_log___handler_a77c07bc8ee96f3bef8948d2e4efa90f8}\label{classmain_1_1util_1_1_log___handler_a77c07bc8ee96f3bef8948d2e4efa90f8}} 
+\index{main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}!write\+To\+Log\+File@{write\+To\+Log\+File}}
+\index{write\+To\+Log\+File@{write\+To\+Log\+File}!main\+::util\+::\+Log\+\_\+\+Handler@{main\+::util\+::\+Log\+\_\+\+Handler}}
+\subsubsection{\texorpdfstring{write\+To\+Log\+File()}{writeToLogFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int main.\+util.\+Log\+\_\+\+Handler.\+write\+To\+Log\+File (\begin{DoxyParamCaption}\item[{String}]{level,  }\item[{String}]{content\+To\+Write }\end{DoxyParamCaption})}
+
+To write a content into the log file (As on need basis with some customized details). 
+\begin{DoxyParams}{Parameters}
+{\em Lon} & level to write, content\+To\+Write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int, 1 for success \& 0 for failure. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+main/util/Log\+\_\+\+Handler.\+java\end{DoxyCompactItemize}

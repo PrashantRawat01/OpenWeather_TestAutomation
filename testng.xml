@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression suite 1" verbose="1"  parallel ="classes" thread-count="1">
+<parameter name="BrowserType"  value="Chrome"/>
+  <test name="Test1">
+    <classes>
+      <class name="main.testScripts.Test1"/>
+    </classes>
+  </test>
+    <test name="Test2" >
+    <classes>
+      <class name="main.testScripts.Test2"/>
+       <parameter name="Param1" value="abcde"/> 
+    </classes>
+  </test>
+    <test name="Test3" >
+    <classes>
+      <class name="main.testScripts.Test3"/>
+       <parameter name="Param1" value="Mumbai"/> 
+    </classes>
+  </test>
+    <test name="Test4" >
+    <classes>
+      <class name="main.testScripts.Test4"/>
+    </classes>
+ </test>
+</suite>

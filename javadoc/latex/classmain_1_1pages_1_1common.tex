@@ -1,0 +1,115 @@
+\hypertarget{classmain_1_1pages_1_1common}{}\section{main.\+pages.\+common Class Reference}
+\label{classmain_1_1pages_1_1common}\index{main.\+pages.\+common@{main.\+pages.\+common}}
+Inheritance diagram for main.\+pages.\+common\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.866667cm]{classmain_1_1pages_1_1common}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmain_1_1pages_1_1common_aedb8bb00674efe1e7b551e14d10219ba}{start\+Test\+Environment}} (String test\+Case\+Name, String browser\+Type)
+\item 
+void \mbox{\hyperlink{classmain_1_1pages_1_1common_a04df2281dc9f8ea63ba88528030c54c2}{close\+Test\+Environment}} (String test\+Case\+Name)
+\item 
+void \mbox{\hyperlink{classmain_1_1pages_1_1common_a7b9ae10e9d8cfb4504c06dc25d133c1f}{take\+Screen\+Shot}} (String name\+Of\+Screen\+Shot)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classmain_1_1pages_1_1common_aa1116271e95e4d544eab6c38d160a1ab}{is64\+Bit\+System}} ()
+\item 
+static String \mbox{\hyperlink{classmain_1_1pages_1_1common_a75bf8538e39f1ea3759eebeef9edfa22}{is\+Link\+Broken}} (U\+RL url)  throws Exception 	 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmain_1_1pages_1_1common_a3769216efb920a003c2bb86ad9cee902}\label{classmain_1_1pages_1_1common_a3769216efb920a003c2bb86ad9cee902}} 
+static boolean {\bfseries test\+Status} = true
+\item 
+\mbox{\Hypertarget{classmain_1_1pages_1_1common_a3061c243240e93e69ddd669f66d40d25}\label{classmain_1_1pages_1_1common_a3061c243240e93e69ddd669f66d40d25}} 
+static Soft\+Assert {\bfseries soft\+Assert}
+\item 
+\mbox{\Hypertarget{classmain_1_1pages_1_1common_a5a1d1b1d4a665cb359580db45574cd62}\label{classmain_1_1pages_1_1common_a5a1d1b1d4a665cb359580db45574cd62}} 
+static \mbox{\hyperlink{classmain_1_1util_1_1_log___handler}{Log\+\_\+\+Handler}} {\bfseries log\+\_\+\+Handler}
+\item 
+\mbox{\Hypertarget{classmain_1_1pages_1_1common_a20a15df6732341b69f37947f111c38ab}\label{classmain_1_1pages_1_1common_a20a15df6732341b69f37947f111c38ab}} 
+static int {\bfseries test\+Screen\+Shot\+Seriel}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provided for initializing all the common methods across Open\+Weather project. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain_1_1pages_1_1common_a04df2281dc9f8ea63ba88528030c54c2}\label{classmain_1_1pages_1_1common_a04df2281dc9f8ea63ba88528030c54c2}} 
+\index{main\+::pages\+::common@{main\+::pages\+::common}!close\+Test\+Environment@{close\+Test\+Environment}}
+\index{close\+Test\+Environment@{close\+Test\+Environment}!main\+::pages\+::common@{main\+::pages\+::common}}
+\subsubsection{\texorpdfstring{close\+Test\+Environment()}{closeTestEnvironment()}}
+{\footnotesize\ttfamily void main.\+pages.\+common.\+close\+Test\+Environment (\begin{DoxyParamCaption}\item[{String}]{test\+Case\+Name }\end{DoxyParamCaption})}
+
+Common methods to close Test environment. 
+\begin{DoxyParams}{Parameters}
+{\em test\+Case\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmain_1_1pages_1_1common_aa1116271e95e4d544eab6c38d160a1ab}\label{classmain_1_1pages_1_1common_aa1116271e95e4d544eab6c38d160a1ab}} 
+\index{main\+::pages\+::common@{main\+::pages\+::common}!is64\+Bit\+System@{is64\+Bit\+System}}
+\index{is64\+Bit\+System@{is64\+Bit\+System}!main\+::pages\+::common@{main\+::pages\+::common}}
+\subsubsection{\texorpdfstring{is64\+Bit\+System()}{is64BitSystem()}}
+{\footnotesize\ttfamily static boolean main.\+pages.\+common.\+is64\+Bit\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Common methods to identify the systems\textquotesingle{} bit version on bases of Sselenium Driver version passes to script. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmain_1_1pages_1_1common_a75bf8538e39f1ea3759eebeef9edfa22}\label{classmain_1_1pages_1_1common_a75bf8538e39f1ea3759eebeef9edfa22}} 
+\index{main\+::pages\+::common@{main\+::pages\+::common}!is\+Link\+Broken@{is\+Link\+Broken}}
+\index{is\+Link\+Broken@{is\+Link\+Broken}!main\+::pages\+::common@{main\+::pages\+::common}}
+\subsubsection{\texorpdfstring{is\+Link\+Broken()}{isLinkBroken()}}
+{\footnotesize\ttfamily static String main.\+pages.\+common.\+is\+Link\+Broken (\begin{DoxyParamCaption}\item[{U\+RL}]{url }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Common methods to identify if the link available on webpage is broken. 
+\begin{DoxyParams}{Parameters}
+{\em url} & of the link \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmain_1_1pages_1_1common_aedb8bb00674efe1e7b551e14d10219ba}\label{classmain_1_1pages_1_1common_aedb8bb00674efe1e7b551e14d10219ba}} 
+\index{main\+::pages\+::common@{main\+::pages\+::common}!start\+Test\+Environment@{start\+Test\+Environment}}
+\index{start\+Test\+Environment@{start\+Test\+Environment}!main\+::pages\+::common@{main\+::pages\+::common}}
+\subsubsection{\texorpdfstring{start\+Test\+Environment()}{startTestEnvironment()}}
+{\footnotesize\ttfamily void main.\+pages.\+common.\+start\+Test\+Environment (\begin{DoxyParamCaption}\item[{String}]{test\+Case\+Name,  }\item[{String}]{browser\+Type }\end{DoxyParamCaption})}
+
+A common method to Start of Test environment. 
+\begin{DoxyParams}{Parameters}
+{\em test\+Case\+Name,browser\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmain_1_1pages_1_1common_a7b9ae10e9d8cfb4504c06dc25d133c1f}\label{classmain_1_1pages_1_1common_a7b9ae10e9d8cfb4504c06dc25d133c1f}} 
+\index{main\+::pages\+::common@{main\+::pages\+::common}!take\+Screen\+Shot@{take\+Screen\+Shot}}
+\index{take\+Screen\+Shot@{take\+Screen\+Shot}!main\+::pages\+::common@{main\+::pages\+::common}}
+\subsubsection{\texorpdfstring{take\+Screen\+Shot()}{takeScreenShot()}}
+{\footnotesize\ttfamily void main.\+pages.\+common.\+take\+Screen\+Shot (\begin{DoxyParamCaption}\item[{String}]{name\+Of\+Screen\+Shot }\end{DoxyParamCaption})}
+
+Common methods to Take screenshot per failure during test execution. 
+\begin{DoxyParams}{Parameters}
+{\em name\+Of\+Screen\+Shot} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+main/pages/common.\+java\end{DoxyCompactItemize}
