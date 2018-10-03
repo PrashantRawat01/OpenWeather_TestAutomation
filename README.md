@@ -3,17 +3,18 @@ Descript: This is a demo project for OpenWeather Application "https://openweathe
 Just creating with the object to have good covering of end to end framework with the given timeframe.
 
 Features it support:
-1) Its a Selenium webdriver based automation project
+1) It’s a Selenium webdriver based test automation project.
 2) TestNG framework is used to drive the automation testing.
-3) Maven is integrated for Build & compilation.
-4) Log4j is implemeted for better reporting and proper logging structuring
-5) Support Paralelle execution of test cases as Class level
-6) Support multiple web broser (chrome, Fireforx)
-7) The locators are externalized so flexibility to change with out much rework
-8) The test cases are datadriven so this input data can be passed from testng xml.
-9) Property file is used for configuration so no hardcoding of paths, this makes it very flexible if thin's and platform changes, in no time it can be managed.
+3) Maven is integrated for Build & Compilation.
+4) Log4j is implemented for better reporting and proper logging structure.
+5) Support Parallel test execution of test cases at Class level with multiple threads.
+6) Support provided for multiple web browser like: Chrome & Firefox.
+7) The locators are externalized so there is flexibility to change without much rework.
+8) The test cases are data driven and these input data’s can be passed from testng xml.
+9) Property file is used for configuration so there is no hardcoding of paths, this makes it very flexible in terms of a code folder change or platform changes, in no time it can be managed.
 10) Supports command line execution so no need to open the code to run the test automation scripting.
-11) The folder structure and libs are not needed to predefine. And this complete project can be placed at any location, as its having dynamic paths, will work without any huddle.
+11) The folder structure and libs are not needed to be predefine and the project can be downloaded/ placed from github at any location, Since it has dynamic paths, this will work without any huddle.
+12) It supports Jenkins pipeline for Continuous Integrations and Deployment. 
 
 ==========================================
 Setup of Selenium web-driver, TestNG, XSLT report & Basic things
@@ -101,7 +102,7 @@ o	Enter Project Name as “Pru_openweather_Backup”
 o	Click on Finish button.
 o	Under newly created project “Pru_openweather_Backup” you will see the “src“ folder & right click on the “src” folder which is holding the code.
 
-•	Second step is to setup project to run through Maven.
+10	Second step is to setup project to run through Maven.
 o	Now Right click on “Pru_openweather_Backup” & select RunAs->Maven Clean option.
 o	Now Right click on “Pru_openweather_Backup” & select RunAs->Maven Install option.
 o	Now Right click on “Pru_openweather_Backup” & select RunAs->Maven Run option.
@@ -110,12 +111,41 @@ o	This should have all the necesarry dependent project downloaded and running te
 o	For a sucessful test execution, there will be a TestNG execution report
 	This will be available at: ..//target\surefire-reports\index.html
 
-•	Now we are good to start with class creation in Eclipse.
+11	The same cane be done using Jenkis pipeline with below script:
+	pipeline {
+	agent any
+	
+	stages {
+		stage ('Compile Stage') {
+			steps{
+				withMaven (maven: 'maven_3_5_4'){
+				sh 'mvn clean compile'
+				}
+			}
+		}
+		stage ('Testing Stage') {
+			steps{
+				withMaven (maven: 'maven_3_5_4'){
+				sh 'mvn test'
+				}
+			}
+		}
+		stage ('Deployment Stage') {
+			steps{
+				withMaven (maven: 'maven_3_5_4'){
+				sh 'mvn deploy'
+				}
+			}
+		}		
+		}
+	}
+
+12	Now we are good to start with class creation in Eclipse.
 o	Create some testScript classes under _testScript folder so we can have the test suite which we can run, form statistics and create report using above setup.
 o	For example:
 
 
-10.	Create a “testng.xml”:
+13.	Create a “testng.xml”:
 
 •	Description: By help of it we can execute the created “TestSuit”.
 o	Select the project and right Click on to it and 
@@ -156,7 +186,7 @@ o	Format need to be as below (For example) {Here I have listed TestNgClass (whic
 </suite>
 
 
-11.	Execute of the TestSuit & generating TestNg Reports:
+14.	Execute of the TestSuit & generating TestNg Reports:
 
 •	Test execution in Selenium is possible without the “TestNG” framework then it will generate the report using default framework.
 •	Using “TestNG” framework:
